@@ -23,54 +23,8 @@ function glowOn(){
 }
 
 $(window).resize(function(){
-
     // Mobile view
-    if($(window).width() <= 955){
-        if($(window).width() > 410 && !isMobileDevice()){
-            $("#content").css("height","140vh");
-        }
-
-        if($(window).height() <= 400 && !isMobileDevice()){
-            $("#content").css("height","250vh");
-        }
-
-        $("#snow").attr("src", "./images/snow2.png");
-
-        $("#footer-menu").removeClass("justify-content-start");
-        $("#footer-menu").addClass("justify-content-center");
-
-        $("#footer-logo").removeClass("col-md-1");
-        $("#footer-logo").addClass("col-md");
-
-        $("#copyright").removeClass("col-md-2");
-        $("#copyright").addClass("col-md")
-    } else{
-        $("#snow").attr("src", "./images/snow.png");
-        $("#content").css("height","92vh");
-
-        $("#footer-menu").removeClass("justify-content-center");
-        $("#footer-menu").addClass("justify-content-start");
-
-
-        $("#footer-logo").addClass("col-md-1");
-        $("#footer-logo").removeClass("col-md");
-
-        $("#copyright").addClass("col-md-2");
-        $("#copyright").remove("col-md")
-    }
-
-
-    // Footer height by window width
-    if($(window).width() <= 1130 && $(window).width() > 955){
-        $('#footer').css("height", "6vw")
-    } else if ($(window).width() > 955){
-        $('#footer').css("height", "5vw")
-    }
-});
-
-$(document).ready(function(){
-    // Mobile view
-    if($(window).width() <= 955){
+    if($(window).width() <= 955 || $(window).height() > $(window).width()){
         if($(window).width() > 410 && $(window).width() <= 815 && !isMobileDevice()){
             $("#content").css("height","150vh");
         }
@@ -94,7 +48,11 @@ $(document).ready(function(){
         $("#footer-logo").addClass("col-md");
 
         $("#copyright").removeClass("col-md-2");
-        $("#copyright").addClass("col-md")
+        $("#copyright").addClass("col-md");
+
+        $("#garland_on").attr("src", "./images/garland_on_mob.svg")
+        $("#garland_off").attr("src", "./images/garland_off_mob.svg")
+
     } else{
         $("#snow").attr("src", "./images/snow.png");
         $("#content").css("height","92vh");
@@ -108,13 +66,60 @@ $(document).ready(function(){
 
         $("#copyright").addClass("col-md-2");
         $("#copyright").remove("col-md")
+
+        $("#garland_on").attr("src", "./images/garland_on.svg")
+        $("#garland_off").attr("src", "./images/garland_off.svg")
     }
+});
+
+$(document).ready(function(){
+    // Mobile view
+    if($(window).width() <= 955 || $(window).height() > $(window).width()){
+        if($(window).width() > 410 && $(window).width() <= 815 && !isMobileDevice()){
+            $("#content").css("height","150vh");
+        }
+
+        if($(window).width() > 815 && !isMobileDevice()){
+            $("#content").css("height","170vh");
+        }
+
+        if($(window).height() <= 400 && !isMobileDevice()){
+            $("#content").css("height","250vh");
+        }
+
+        $("#candies01").attr("src", "./images/mobile_candies.png")
+
+        $("#snow").attr("src", "./images/snow2.png");
+
+        $("#footer-menu").removeClass("justify-content-start");
+        $("#footer-menu").addClass("justify-content-center");
+
+        $("#footer-logo").removeClass("col-md-1");
+        $("#footer-logo").addClass("col-md");
+
+        $("#copyright").removeClass("col-md-2");
+        $("#copyright").addClass("col-md");
+
+        $("#garland_on").attr("src", "./images/garland_on_mob.svg")
+        $("#garland_off").attr("src", "./images/garland_off_mob.svg")
+
+    } else{
+        $("#snow").attr("src", "./images/snow.png");
+        $("#content").css("height","92vh");
+
+        $("#footer-menu").removeClass("justify-content-center");
+        $("#footer-menu").addClass("justify-content-start");
 
 
-    // Footer height by window width
-    if($(window).width() <= 1130 && $(window).width() > 955){
-        $('#footer').css("height", "6vw")
-    } else if ($(window).width() > 955){
-        $('#footer').css("height", "5vw")
+        $("#footer-logo").addClass("col-md-1");
+        $("#footer-logo").removeClass("col-md");
+
+        $("#copyright").addClass("col-md-2");
+        $("#copyright").remove("col-md")
+
+        $("#garland_on").attr("src", "./images/garland_on.svg")
+        $("#garland_off").attr("src", "./images/garland_off.svg")
     }
+
+    console.log($(window).height() > $(window).width());
 });
