@@ -810,7 +810,7 @@ footer #footer_snow05 {
     width: calc(10vw + 13vh);
   }
   .content {
-    height: auto;
+    height: calc(100vh + 10vw);
     min-height: 100vh;
     max-height: 250vh;
   }
