@@ -7,17 +7,34 @@
           box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 html {
-  overflow-x: hidden;
   font-size: .8vw;
 }
 
+.page::-webkit-scrollbar {
+  display: none;
+}
+
+.modal_body::-webkit-scrollbar {
+  width: 15px;
+  display: block;
+}
+
+.modal_body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px 10px #613BC6;
+          box-shadow: inset 0 0 10px 10px #613BC6;
+  border: solid 5px transparent;
+  border-radius: 2vw;
+}
+
+.modal_body::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 10px 10px #ec008c;
+          box-shadow: inset 0 0 10px 10px #ec008c;
+  border: solid 5px transparent;
+  border-radius: 2vw;
+}
+
 body {
-  overflow-x: hidden;
   font-size: .8335vw;
   height: auto;
   background-color: #7247E9;
@@ -26,8 +43,7 @@ body {
 
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
 }
 
 ul {
@@ -35,7 +51,7 @@ ul {
 }
 
 .page {
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100vh;
   width: 100vw;
   position: relative;
@@ -65,6 +81,7 @@ img {
   height: 92vh;
   max-height: 92vh;
   min-height: 92vh;
+  overflow: hidden;
 }
 
 .information {
@@ -109,6 +126,7 @@ img {
 
 .information__block-title h3 {
   font-family: 'Rubik Mono One', sans-serif;
+  word-spacing: -1.5rem;
   font-size: 3vw;
   color: white;
   text-shadow: 0 0.2vw 0.35vw rgba(0, 0, 0, 0.4);
@@ -189,7 +207,7 @@ img {
 }
 
 footer {
-  height: 5vw;
+  height: 4.3vw;
   background-color: #27264B;
   z-index: 100;
   position: relative;
@@ -212,6 +230,10 @@ footer .footer-row {
   width: 100%;
 }
 
+footer .footer-logo {
+  margin-left: 2vw;
+}
+
 footer .footer-logo img {
   width: 100%;
 }
@@ -220,6 +242,7 @@ footer .footer-list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  margin-left: -3.5%;
 }
 
 footer .footer-list .footer-list-item {
@@ -274,7 +297,7 @@ footer .footer-snow {
 footer #footer_snow01 {
   width: 7vw;
   top: -10%;
-  left: 0;
+  left: 4%;
   z-index: 1000;
 }
 
@@ -318,7 +341,7 @@ footer #footer_snow05 {
           transform: translateX(-50%) translateY(-50%);
   background-color: #613BC6;
   z-index: 10500;
-  border-radius: 15px;
+  border-radius: .8vw;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -363,7 +386,7 @@ footer #footer_snow05 {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .my_modal .modal_body {
@@ -375,11 +398,12 @@ footer #footer_snow05 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
-  border-radius: 10px;
+  border-radius: .7vw;
+  position: relative;
   overflow: hidden;
   overflow-y: scroll;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-  box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 .5vw #000000;
+  box-shadow: inset 0 0 .5vw #000000;
 }
 
 .my_modal .button_wrapper {
@@ -396,9 +420,9 @@ footer #footer_snow05 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 12px;
-  -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.3);
+  border-radius: .6vw;
+  -webkit-box-shadow: 0px 0.2vw 1vw 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0.2vw 1vw 0px rgba(0, 0, 0, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -768,9 +792,15 @@ footer #footer_snow05 {
     max-height: 45vw;
     min-height: 45vw;
   }
+  html, body, .page {
+    overflow-y: scroll;
+  }
 }
 
 @media only screen and (pointer: fine) and (max-width: 955px) {
+  html, body {
+    overflow-y: scroll;
+  }
   .page {
     height: auto;
   }
@@ -821,6 +851,7 @@ footer #footer_snow05 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0;
   }
   footer .footer-logo img {
     width: calc(10vw + 5vh);
@@ -940,8 +971,8 @@ footer #footer_snow05 {
   }
   .my_modal {
     width: 85%;
-    -webkit-transform: translateX(-50%) translateY(-100%);
-            transform: translateX(-50%) translateY(-100%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
   }
   .my_modal .modal_header {
     height: calc(3vw + 5vh);
@@ -968,6 +999,9 @@ footer #footer_snow05 {
 }
 
 @media only screen and (pointer: coarse) and (max-width: 955px) {
+  html, body {
+    overflow-y: scroll;
+  }
   .page {
     height: auto;
   }
@@ -1018,6 +1052,7 @@ footer #footer_snow05 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0;
   }
   footer .footer-logo img {
     width: calc(10vw + 5vh);
@@ -1143,8 +1178,8 @@ footer #footer_snow05 {
   }
   .my_modal {
     width: 85%;
-    -webkit-transform: translateX(-50%) translateY(-80%);
-            transform: translateX(-50%) translateY(-80%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
   }
   .my_modal .modal_header {
     height: calc(3vw + 5vh);
@@ -1171,6 +1206,9 @@ footer #footer_snow05 {
 }
 
 @media only screen and (pointer: fine) and (orientation: portrait) {
+  html, body {
+    overflow-y: scroll;
+  }
   .page {
     height: auto;
   }
@@ -1216,6 +1254,7 @@ footer #footer_snow05 {
   }
   footer {
     height: calc(10vw + 10vh);
+    margin: 0;
   }
   footer .footer-logo {
     -webkit-box-pack: center;
@@ -1340,8 +1379,8 @@ footer #footer_snow05 {
   }
   .my_modal {
     width: 85%;
-    -webkit-transform: translateX(-50%) translateY(-100%);
-            transform: translateX(-50%) translateY(-100%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
   }
   .my_modal .modal_header {
     height: calc(3vw + 5vh);
@@ -1368,6 +1407,9 @@ footer #footer_snow05 {
 }
 
 @media only screen and (pointer: coarse) and (width: 540px) and (height: 720px) {
+  html, body {
+    overflow-y: scroll;
+  }
   .page {
     height: auto;
   }
@@ -1418,6 +1460,7 @@ footer #footer_snow05 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0;
   }
   footer .footer-logo img {
     width: calc(10vw + 5vh);
@@ -1541,9 +1584,15 @@ footer #footer_snow05 {
     min-height: 100vh;
     max-height: 250vh;
   }
+  html, body {
+    overflow-y: scroll;
+  }
 }
 
 @media only screen and (pointer: coarse) and (width: 1024px) and (height: 1366px) {
+  html, body {
+    overflow-y: scroll;
+  }
   .page {
     height: auto;
   }
@@ -1594,6 +1643,7 @@ footer #footer_snow05 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0;
   }
   footer .footer-logo img {
     width: calc(10vw + 5vh);
@@ -1713,8 +1763,8 @@ footer #footer_snow05 {
   }
   .my_modal {
     width: 85%;
-    -webkit-transform: translateX(-50%) translateY(-80%);
-            transform: translateX(-50%) translateY(-80%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
   }
   .my_modal .modal_header {
     height: calc(3vw + 5vh);
@@ -1914,8 +1964,8 @@ footer #footer_snow05 {
   }
   .my_modal {
     width: 90%;
-    -webkit-transform: translateX(-50%) translateY(-80%);
-            transform: translateX(-50%) translateY(-80%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
   }
   .my_modal .modal_header {
     height: calc(3vw + 5vh);
@@ -1943,7 +1993,13 @@ footer #footer_snow05 {
 
 @media only screen and (pointer: fine) and (max-width: 1140px) and (min-width: 956px) and (orientation: landscape) {
   footer {
-    height: 6vw;
+    height: 6.3vw;
+  }
+}
+
+@media only screen and (pointer: fine) and (max-width: 1350px) and (min-width: 1140px) and (orientation: landscape) {
+  footer {
+    height: 5vw;
   }
 }
 /*# sourceMappingURL=styles.css.map */

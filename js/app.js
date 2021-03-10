@@ -47,7 +47,7 @@ $(window).resize(function(){
         $("#footer-logo").removeClass("col-md-1");
         $("#footer-logo").addClass("col-md");
 
-        $("#copyright").removeClass("col-md-2");
+        $("#copyright").removeClass("col-md-1");
         $("#copyright").addClass("col-md");
 
         $("#garland_on").attr("src", "./images/garland_on_mob.svg")
@@ -64,7 +64,7 @@ $(window).resize(function(){
         $("#footer-logo").addClass("col-md-1");
         $("#footer-logo").removeClass("col-md");
 
-        $("#copyright").addClass("col-md-2");
+        $("#copyright").addClass("col-md-1");
         $("#copyright").remove("col-md")
 
         $("#garland_on").attr("src", "./images/garland_on.svg")
@@ -97,7 +97,7 @@ $(document).ready(function(){
         $("#footer-logo").removeClass("col-md-1");
         $("#footer-logo").addClass("col-md");
 
-        $("#copyright").removeClass("col-md-2");
+        $("#copyright").removeClass("col-md-1");
         $("#copyright").addClass("col-md");
 
         $("#garland_on").attr("src", "./images/garland_on_mob.svg")
@@ -114,14 +114,13 @@ $(document).ready(function(){
         $("#footer-logo").addClass("col-md-1");
         $("#footer-logo").removeClass("col-md");
 
-        $("#copyright").addClass("col-md-2");
+        $("#copyright").addClass("col-md-1");
         $("#copyright").remove("col-md")
 
         $("#garland_on").attr("src", "./images/garland_on.svg")
         $("#garland_off").attr("src", "./images/garland_off.svg")
     }
 
-    console.log($(window).height() > $(window).width());
 });
 
 // Modal
@@ -147,7 +146,7 @@ $("#closeModal").click(function(){
         $("#my_modal").css("display", "none");
         $("#coverage").css("display", "none");
         $('html, body, #page').css({
-            overflow: 'auto',
+            overflow: 'hidden',
             height: 'auto'
         });
     }, 500)
