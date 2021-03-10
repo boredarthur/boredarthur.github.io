@@ -132,7 +132,7 @@ $("#open-modal").click(function(){
     setTimeout(() => {
         $("#my_modal").css("opacity", "1");
         $("#coverage").css("opacity", "0.9");
-        $('html, body').css({
+        $('html, body, #page').css({
             overflow: 'hidden',
             height: '100%'
         });
@@ -146,7 +146,7 @@ $("#closeModal").click(function(){
     setTimeout(() => {
         $("#my_modal").css("display", "none");
         $("#coverage").css("display", "none");
-        $('html, body').css({
+        $('html, body, #page').css({
             overflow: 'auto',
             height: 'auto'
         });
