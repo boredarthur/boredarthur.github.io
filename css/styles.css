@@ -306,6 +306,136 @@ footer #footer_snow05 {
   z-index: 1000;
 }
 
+.my_modal {
+  width: 50%;
+  height: auto;
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: #613BC6;
+  z-index: 10500;
+  border-radius: 15px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.my_modal .modal_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4vw;
+}
+
+.my_modal .close_button {
+  right: 3.5%;
+  cursor: pointer;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  width: .9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my_modal .close_button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.my_modal .heading {
+  color: #fff;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+.my_modal .modal_body {
+  height: 50vh;
+  width: 95%;
+  padding: 2rem;
+  color: #6A698C;
+  background-color: #1F1240;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.my_modal .button_wrapper {
+  width: 95%;
+  height: 12vh;
+  min-height: 12vh;
+  max-height: 12vh;
+}
+
+.my_modal .button_wrapper .modal_button {
+  width: 100%;
+  height: 70%;
+  background: url("../images/modal_button.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.my_modal .button_wrapper .modal_button a {
+  font-size: 1.2vw;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: opacity .5s ease;
+  transition: opacity .5s ease;
+}
+
+.my_modal .button_wrapper .modal_button a:hover {
+  text-decoration: none;
+}
+
+.coverage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 8000;
+  background-color: #1F0B36;
+  opacity: 0;
+  display: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
 .drawings {
   position: absolute;
   left: 0;
@@ -806,6 +936,33 @@ footer #footer_snow05 {
   #star7 {
     display: none;
   }
+  .my_modal {
+    width: 85%;
+    -webkit-transform: translateX(-50%) translateY(-100%);
+            transform: translateX(-50%) translateY(-100%);
+  }
+  .my_modal .modal_header {
+    height: calc(3vw + 5vh);
+  }
+  .my_modal .heading {
+    font-size: calc(1vw + 1.4vh);
+  }
+  .my_modal .close_button {
+    right: calc(2vw + 3.2vh);
+    width: calc(.7vw + 1.5vh);
+  }
+  .my_modal .button_wrapper {
+    height: 8vh;
+    min-height: 8vh;
+  }
+  .my_modal .button_wrapper .modal_button a {
+    font-size: calc(1vw + 1vh);
+  }
+  .my_modal .modal_body {
+    padding: calc(.7vw + .7vh);
+    font-size: calc(1vw + 1vh);
+    width: 95%;
+  }
 }
 
 @media only screen and (pointer: coarse) and (max-width: 955px) {
@@ -982,6 +1139,33 @@ footer #footer_snow05 {
   #star7 {
     display: none;
   }
+  .my_modal {
+    width: 85%;
+    -webkit-transform: translateX(-50%) translateY(-80%);
+            transform: translateX(-50%) translateY(-80%);
+  }
+  .my_modal .modal_header {
+    height: calc(3vw + 5vh);
+  }
+  .my_modal .heading {
+    font-size: calc(1vw + 1.4vh);
+  }
+  .my_modal .close_button {
+    right: calc(1vw + 1.5vh);
+    width: calc(.7vw + 1.5vh);
+  }
+  .my_modal .button_wrapper {
+    height: 8vh;
+    min-height: 8vh;
+  }
+  .my_modal .button_wrapper .modal_button a {
+    font-size: calc(1vw + 1vh);
+  }
+  .my_modal .modal_body {
+    padding: calc(.7vw + .7vh);
+    font-size: calc(1vw + 1vh);
+    width: 95%;
+  }
 }
 
 @media only screen and (pointer: fine) and (orientation: portrait) {
@@ -1151,6 +1335,33 @@ footer #footer_snow05 {
   }
   #star7 {
     display: none;
+  }
+  .my_modal {
+    width: 85%;
+    -webkit-transform: translateX(-50%) translateY(-100%);
+            transform: translateX(-50%) translateY(-100%);
+  }
+  .my_modal .modal_header {
+    height: calc(3vw + 5vh);
+  }
+  .my_modal .heading {
+    font-size: calc(1vw + 1.4vh);
+  }
+  .my_modal .close_button {
+    right: calc(2vw + 3.2vh);
+    width: calc(.7vw + 1.5vh);
+  }
+  .my_modal .button_wrapper {
+    height: 8vh;
+    min-height: 8vh;
+  }
+  .my_modal .button_wrapper .modal_button a {
+    font-size: calc(1vw + 1vh);
+  }
+  .my_modal .modal_body {
+    padding: calc(.7vw + .7vh);
+    font-size: calc(1vw + 1vh);
+    width: 95%;
   }
 }
 
@@ -1498,6 +1709,33 @@ footer #footer_snow05 {
   #star7 {
     display: none;
   }
+  .my_modal {
+    width: 85%;
+    -webkit-transform: translateX(-50%) translateY(-80%);
+            transform: translateX(-50%) translateY(-80%);
+  }
+  .my_modal .modal_header {
+    height: calc(3vw + 5vh);
+  }
+  .my_modal .heading {
+    font-size: calc(1vw + 1.4vh);
+  }
+  .my_modal .close_button {
+    right: calc(2vw + 3.2vh);
+    width: calc(.7vw + 1.5vh);
+  }
+  .my_modal .button_wrapper {
+    height: 8vh;
+    min-height: 8vh;
+  }
+  .my_modal .button_wrapper .modal_button a {
+    font-size: calc(1vw + 1vh);
+  }
+  .my_modal .modal_body {
+    padding: calc(.7vw + .7vh);
+    font-size: calc(1vw + 1vh);
+    width: 95%;
+  }
 }
 
 @media only screen and (pointer: coarse) and (min-width: 980px) and (min-height: 1000px) {
@@ -1671,6 +1909,33 @@ footer #footer_snow05 {
   }
   #star7 {
     display: none;
+  }
+  .my_modal {
+    width: 90%;
+    -webkit-transform: translateX(-50%) translateY(-80%);
+            transform: translateX(-50%) translateY(-80%);
+  }
+  .my_modal .modal_header {
+    height: calc(3vw + 5vh);
+  }
+  .my_modal .heading {
+    font-size: calc(1vw + 1.4vh);
+  }
+  .my_modal .close_button {
+    right: calc(2vw + 3.2vh);
+    width: calc(.7vw + 1.5vh);
+  }
+  .my_modal .button_wrapper {
+    height: 8vh;
+    min-height: 8vh;
+  }
+  .my_modal .button_wrapper .modal_button a {
+    font-size: calc(1vw + 1vh);
+  }
+  .my_modal .modal_body {
+    padding: calc(.7vw + .7vh);
+    font-size: calc(1vw + 1vh);
+    width: 95%;
   }
 }
 

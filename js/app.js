@@ -123,3 +123,40 @@ $(document).ready(function(){
 
     console.log($(window).height() > $(window).width());
 });
+
+// Modal
+$("#open-modal").click(function(){
+    $("#my_modal").css("display", "block");
+    $("#coverage").css("display", "block");
+
+    setTimeout(() => {
+        $("#my_modal").css("opacity", "1");
+        $("#coverage").css("opacity", "0.9");
+        $('html, body').css({
+            overflow: 'hidden',
+            height: '100%'
+        });
+    }, 500)
+});
+
+$("#closeModal").click(function(){
+    $("#my_modal").css("opacity", "0");
+    $("#coverage").css("opacity", "0");
+
+    setTimeout(() => {
+        $("#my_modal").css("display", "none");
+        $("#coverage").css("display", "none");
+        $('html, body').css({
+            overflow: 'auto',
+            height: 'auto'
+        });
+    }, 500)
+});
+
+$("#modal_button").mouseenter(function(){
+    $("#modal_button_text").css("opacity", ".8");
+});
+
+$("#modal_button").mouseleave(function(){
+    $("#modal_button_text").css("opacity", "1");
+});
