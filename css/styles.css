@@ -16,21 +16,21 @@ html {
 }
 
 .modal_body::-webkit-scrollbar {
-  width: 15px;
+  width: 1vw;
   display: block;
 }
 
 .modal_body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 10px 10px #613BC6;
-          box-shadow: inset 0 0 10px 10px #613BC6;
-  border: solid 5px transparent;
+  -webkit-box-shadow: inset 0 0 1vw 1vw #613BC6;
+          box-shadow: inset 0 0 1vw 1vw #613BC6;
+  border: solid .35vw transparent;
   border-radius: 2vw;
 }
 
 .modal_body::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 10px 10px #ec008c;
-          box-shadow: inset 0 0 10px 10px #ec008c;
-  border: solid 5px transparent;
+  -webkit-box-shadow: inset 0 0 1vw 1vw #ec008c;
+          box-shadow: inset 0 0 1vw 1vw #ec008c;
+  border: solid .35vw transparent;
   border-radius: 2vw;
 }
 
@@ -124,12 +124,8 @@ img {
   margin-top: -1.5rem;
 }
 
-.information__block-title h3 {
-  font-family: 'Rubik Mono One', sans-serif;
-  word-spacing: -1.5rem;
-  font-size: 3vw;
-  color: white;
-  text-shadow: 0 0.2vw 0.35vw rgba(0, 0, 0, 0.4);
+.information__block-title embed {
+  width: calc(13vw + 10vh);
 }
 
 .information__block #deposit {
@@ -797,7 +793,25 @@ footer #footer_snow05 {
   }
 }
 
+@media only screen and (max-width: 955px) {
+  .my_modal {
+    border-radius: 3vw;
+  }
+  .my_modal .modal_body {
+    border-radius: 2vw;
+  }
+  .my_modal .button_wrapper .modal_button {
+    border-radius: 2vw;
+  }
+}
+
 @media only screen and (pointer: fine) and (max-width: 955px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .modal_body::-webkit-scrollbar {
+    display: none;
+  }
   html, body {
     overflow-y: scroll;
   }
@@ -828,8 +842,8 @@ footer #footer_snow05 {
   .information__block-percents img {
     width: calc(2vw + 3.5vh);
   }
-  .information__block-title h3 {
-    font-size: calc(2.5rem + 3.5vh);
+  .information__block-title embed {
+    width: 40vw;
   }
   .information__block-button .button {
     width: calc(20vw + 18vh);
@@ -999,6 +1013,12 @@ footer #footer_snow05 {
 }
 
 @media only screen and (pointer: coarse) and (max-width: 955px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .modal_body::-webkit-scrollbar {
+    display: none;
+  }
   html, body {
     overflow-y: scroll;
   }
@@ -1029,8 +1049,8 @@ footer #footer_snow05 {
   .information__block-percents img {
     width: calc(2vw + 3.5vh);
   }
-  .information__block-title h3 {
-    font-size: calc(2.5rem + 3.5vh);
+  .information__block-title embed {
+    width: calc(30vw + 20vh);
   }
   .information__block-button .button {
     width: calc(20vw + 18vh);
@@ -1206,6 +1226,12 @@ footer #footer_snow05 {
 }
 
 @media only screen and (pointer: fine) and (orientation: portrait) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .modal_body::-webkit-scrollbar {
+    display: none;
+  }
   html, body {
     overflow-y: scroll;
   }
@@ -1236,8 +1262,8 @@ footer #footer_snow05 {
   .information__block-percents img {
     width: calc(2vw + 3.5vh);
   }
-  .information__block-title h3 {
-    font-size: calc(2.5rem + 3.5vh);
+  .information__block-title embed {
+    width: 40vw;
   }
   .information__block-button .button {
     width: calc(20vw + 18vh);
@@ -1407,6 +1433,12 @@ footer #footer_snow05 {
 }
 
 @media only screen and (pointer: coarse) and (width: 540px) and (height: 720px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .modal_body::-webkit-scrollbar {
+    display: none;
+  }
   html, body {
     overflow-y: scroll;
   }
@@ -1437,8 +1469,8 @@ footer #footer_snow05 {
   .information__block-percents img {
     width: calc(2vw + 3.5vh);
   }
-  .information__block-title h3 {
-    font-size: calc(2.5rem + 3.5vh);
+  .information__block-title embed {
+    width: 50vw;
   }
   .information__block-button .button {
     width: calc(20vw + 18vh);
@@ -1579,6 +1611,12 @@ footer #footer_snow05 {
 }
 
 @media only screen and (pointer: coarse) and (width: 768px) and (height: 1024px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .modal_body::-webkit-scrollbar {
+    display: none;
+  }
   .content {
     height: 120vh !important;
     min-height: 100vh;
@@ -1587,9 +1625,18 @@ footer #footer_snow05 {
   html, body {
     overflow-y: scroll;
   }
+  .information__block-title embed {
+    width: 50vw;
+  }
 }
 
 @media only screen and (pointer: coarse) and (width: 1024px) and (height: 1366px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .modal_body::-webkit-scrollbar {
+    display: none;
+  }
   html, body {
     overflow-y: scroll;
   }
@@ -1620,8 +1667,8 @@ footer #footer_snow05 {
   .information__block-percents img {
     width: calc(2vw + 3.5vh);
   }
-  .information__block-title h3 {
-    font-size: calc(2.5rem + 3.5vh);
+  .information__block-title embed {
+    width: 50vw;
   }
   .information__block-button .button {
     width: calc(20vw + 18vh);
