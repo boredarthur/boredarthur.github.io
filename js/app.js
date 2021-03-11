@@ -145,10 +145,7 @@ $("#closeModal").click(function(){
     setTimeout(() => {
         $("#my_modal").css("display", "none");
         $("#coverage").css("display", "none");
-        $('html, body, #page').css({
-            overflow: 'hidden',
-            height: 'auto'
-        });
+        $('html, body, #page').css({"overflow-x": "hidden", "overflow-y": "scroll", "height":"auto"});
     }, 500)
 });
 
