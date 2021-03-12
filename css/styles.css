@@ -340,8 +340,8 @@ footer #footer_snow05 {
   background-color: #613BC6;
   z-index: 10500;
   border-radius: .8vw;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .my_modal .modal_header {
@@ -456,8 +456,8 @@ footer #footer_snow05 {
   background-color: #1F0B36;
   opacity: 0;
   display: none;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .drawings {
@@ -485,9 +485,9 @@ footer #footer_snow05 {
 }
 
 #candies01 {
-  width: 35vw;
-  left: -5vw;
-  bottom: -5vw;
+  width: 50vw;
+  left: -10vw;
+  bottom: -18vw;
   z-index: 8;
 }
 
@@ -539,7 +539,7 @@ footer #footer_snow05 {
 }
 
 #star6 {
-  width: 4vw;
+  width: 3vw;
   right: 18vw;
   bottom: 35vw;
   -webkit-animation: 3.5s ease infinite star6_anim;
@@ -934,7 +934,7 @@ footer #footer_snow05 {
     left: 50%;
     -o-object-fit: contain;
        object-fit: contain;
-    bottom: 0;
+    bottom: -50vw;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -1147,7 +1147,7 @@ footer #footer_snow05 {
     -o-object-fit: contain;
        object-fit: contain;
     left: 50%;
-    bottom: 15vw;
+    bottom: -30vw;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -1354,7 +1354,7 @@ footer #footer_snow05 {
     left: 50%;
     -o-object-fit: contain;
        object-fit: contain;
-    bottom: 0;
+    bottom: -45vw;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -1559,7 +1559,7 @@ footer #footer_snow05 {
     left: 50%;
     -o-object-fit: contain;
        object-fit: contain;
-    bottom: 0;
+    bottom: -33vw;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -1759,7 +1759,7 @@ footer #footer_snow05 {
     left: 50%;
     -o-object-fit: contain;
        object-fit: contain;
-    bottom: 0;
+    bottom: -35vw !important;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }

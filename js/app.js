@@ -69,6 +69,8 @@ $(window).resize(function(){
 
         $("#garland_on").attr("src", "./images/garland_on.svg")
         $("#garland_off").attr("src", "./images/garland_off.svg")
+
+        $("#candies01").attr("src", "./images/candies1.png")
     }
 });
 
@@ -119,6 +121,8 @@ $(document).ready(function(){
 
         $("#garland_on").attr("src", "./images/garland_on.svg")
         $("#garland_off").attr("src", "./images/garland_off.svg")
+
+        $("#candies01").attr("src", "./images/candies1.png")
     }
 
 });
