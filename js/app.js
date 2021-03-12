@@ -135,7 +135,7 @@ $("#open-modal").click(function(){
             overflow: 'hidden',
             height: '100%'
         });
-    }, 500)
+    }, 200)
 });
 
 $("#closeModal").click(function(){
@@ -150,7 +150,7 @@ $("#closeModal").click(function(){
         } else{
             $('html, body, #page').css({"overflow-x": "hidden", "overflow-y": "hidden", "height":"auto"});
         }
-    }, 500)
+    }, 200)
 });
 
 $("#modal_button").mouseenter(function(){
