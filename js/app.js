@@ -149,9 +149,9 @@ $("#closeModal").click(function(){
         $("#my_modal").css("display", "none");
         $("#coverage").css("display", "none");
         if(isMobileDevice() || ($(window).width() <= 955 || $(window).height() > $(window).width())){
-            $('html, body, #page').css({"overflow-x": "hidden", "overflow-y": "scroll", "height":"auto"});
+            $('html, body, #page').css({"overflow-x": "hidden", "overflow-y": "scroll", "height":"100%"});
         } else{
-            $('html, body, #page').css({"overflow-x": "hidden", "overflow-y": "hidden", "height":"auto"});
+            $('html, body, #page').css({"overflow-x": "hidden", "overflow-y": "hidden", "height":"100%"});
         }
     }, 200)
 });
