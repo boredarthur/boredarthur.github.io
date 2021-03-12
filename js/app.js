@@ -145,7 +145,11 @@ $("#closeModal").click(function(){
     setTimeout(() => {
         $("#my_modal").css("display", "none");
         $("#coverage").css("display", "none");
-        $('html, body, #page').css({"overflow-x": "hidden", "overflow-y": "scroll", "height":"auto"});
+        if(isMobileDevice() || ($(window).width() <= 955 || $(window).height() > $(window).width())){
+            $('html, body, #page').css({"overflow-x": "hidden", "overflow-y": "scroll", "height":"auto"});
+        } else{
+            $('html, body, #page').css({"overflow-x": "hidden", "overflow-y": "hidden", "height":"auto"});
+        }
     }, 500)
 });
 

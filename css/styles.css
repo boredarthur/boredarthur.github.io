@@ -24,14 +24,16 @@ html {
   -webkit-box-shadow: inset 0 0 1vw 1vw #613BC6;
           box-shadow: inset 0 0 1vw 1vw #613BC6;
   border: solid .35vw transparent;
-  border-radius: 2vw;
+  border-radius: 5vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
 }
 
 .modal_body::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 1vw 1vw #ec008c;
           box-shadow: inset 0 0 1vw 1vw #ec008c;
   border: solid .35vw transparent;
-  border-radius: 2vw;
+  border-radius: 5vw;
 }
 
 body {
