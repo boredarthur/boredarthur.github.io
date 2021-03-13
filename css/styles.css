@@ -794,7 +794,7 @@ footer #footer_snow05 {
   html, body, .page {
     overflow-y: scroll;
   }
-  html, body, .page::-webkit-scrollbar {
+  html::-webkit-scrollbar, body::-webkit-scrollbar, .page::-webkit-scrollbar {
     display: none;
   }
   footer {
