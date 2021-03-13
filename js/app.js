@@ -30,7 +30,7 @@ $(window).resize(function(){
         }
 
         if($(window).width() > 815 && !isMobileDevice()){
-            $("#content").css("height","170vh");
+            $("#content").css("height","130vh");
         }
 
         if($(window).height() <= 400 && !isMobileDevice()){
