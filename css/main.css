@@ -224,7 +224,7 @@ body{
 .title{
     text-align: center;
     margin-top: -.5rem;
-    word-spacing: -3vw;
+    word-spacing: -1.4rem;
 }
 
 .title h3:first-child{
@@ -617,6 +617,10 @@ footer{
         width: calc(2vw + 3.5vh);
     }
 
+    .title{
+        word-spacing: -4rem;
+    }
+
     .title h3{
         font-size: calc(2.5rem + 3.5vh);
     }
@@ -669,6 +673,10 @@ footer{
 
     .modal_button a{
         font-size: calc(1vw + 1vh);
+    }
+
+    #drawings_column{
+        margin-top: 3.5vw;
     }
 
     .drawings{
@@ -825,11 +833,19 @@ footer{
     #drawings_column{
         margin-top: 30vh;
     }
+
+    .title{
+        word-spacing: -4rem;
+    }
 }
 
 @media only screen and (pointer: coarse) and (width: 1024px) and (height: 1366px){
     .tree{
         bottom: 170%;
+    }
+
+    .title{
+        word-spacing: -4rem;
     }
 }
 
@@ -884,6 +900,10 @@ footer{
 
     .percentage .percents img{
         width: calc(2vw + 3.5vh);
+    }
+
+    .title{
+        word-spacing: -2.5rem;
     }
 
     .title h3{
@@ -1114,6 +1134,10 @@ footer{
         width: calc(2vw + 3.5vh);
     }
 
+    .title{
+        word-spacing: -2.5rem;
+    }
+
     .title h3{
         font-size: calc(2.5rem + 3.5vh);
     }
@@ -1305,6 +1329,10 @@ footer{
 
     .row{
         flex-wrap: wrap!important;
+    }
+
+    .title{
+        word-spacing: -4rem;
     }
 
     .logo{
