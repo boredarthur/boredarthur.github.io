@@ -221,6 +221,12 @@ body{
     min-width: 12.5rem;
 }
 
+.percentage .hundred svg{
+    width: 100%;
+    -webkit-filter: drop-shadow(0 3px 2px rgba(0, 0, 0, .2));
+    filter: drop-shadow(0 3px 2px rgba(0, 0, 0, .2));
+}
+
 .title{
     text-align: center;
     margin-top: -.5rem;
@@ -586,7 +592,7 @@ footer{
 
     .left-side{
         justify-content: start;
-        height: 70vh;
+        height: 65vh;
     }
 
     .content{
