@@ -838,7 +838,7 @@ footer #footer_snow05 {
   }
   .content {
     height: auto;
-    min-height: 100vh;
+    min-height: 120vw;
     max-height: 250vh;
   }
   .information {
