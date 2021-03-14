@@ -352,7 +352,6 @@
 
         window.addEventListener('load', (event) => {
             if(document.documentElement.clientWidth <= 955 || document.documentElement.clientHeight > document.documentElement.clientWidth){
-                console.log("mob");
                 var informationColumn = document.getElementById("information_column");
                 var drawingsColumn = document.getElementById("drawings_column");
 
@@ -387,7 +386,6 @@
 
             } 
             else{
-                console.log("desc")
                 var footerMenu = document.getElementById("footer-menu");
                 footerMenu.classList.remove("justify-content-center");
                 footerMenu.classList.add("justify-content-start");
@@ -420,7 +418,6 @@
 
         window.onresize = function(event){
             if(document.documentElement.clientWidth <= 955 || document.documentElement.clientHeight > document.documentElement.clientWidth){
-                console.log("mob");
                 var informationColumn = document.getElementById("information_column");
                 var drawingsColumn = document.getElementById("drawings_column");
 
@@ -453,9 +450,12 @@
                     document.getElementById("left-side").style.height = "100vh";
                 }
 
+                if(!isMobileDevice() && document.documentElement.clientHeight <= 500){
+                    document.getElementById("left-side").style.height = "200vh";
+                }
+
             } 
             else{
-                console.log("desc")
                 var footerMenu = document.getElementById("footer-menu");
                 footerMenu.classList.remove("justify-content-center");
                 footerMenu.classList.add("justify-content-start");
@@ -517,6 +517,10 @@
                 document.getElementById("header_garland_off").src = "./images/header_garland_off_mob.svg";
                 if(!isMobileDevice()){
                     document.getElementById("left-side").style.height = "100vh";
+                }
+
+                if(!isMobileDevice() && document.documentElement.clientHeight <= 500){
+                    document.getElementById("left-side").style.height = "200vh";
                 }
             } 
             else{
@@ -581,6 +585,10 @@
                 document.getElementById("header_garland_off").src = "./images/header_garland_off_mob.svg";
                 if(!isMobileDevice()){
                     document.getElementById("left-side").style.height = "100vh";
+                }
+
+                if(!isMobileDevice() && document.documentElement.clientHeight <= 500){
+                    document.getElementById("left-side").style.height = "200vh";
                 }
             } 
             else{
