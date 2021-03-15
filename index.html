@@ -384,6 +384,10 @@
                     document.getElementById("left-side").style.height = "100vh";
                 }
 
+                if(!isMobileDevice() && document.documentElement.clientHeight <= 500){
+                    document.getElementById("left-side").style.height = "200vh";
+                }
+
             } 
             else{
                 var footerMenu = document.getElementById("footer-menu");
@@ -412,6 +416,12 @@
 
                 headerGarlandOn.src = "./images/header_garland_on.svg";
                 document.getElementById("header_garland_off").src = "./images/header_garland_off.svg";
+
+                document.getElementById("left-side").style.height = "100vh";
+
+                if(document.documentElement.clientHeight <= 500){
+                    document.getElementById("left-side").style.height = "170vh";
+                }
             }
             
         });
@@ -482,6 +492,13 @@
 
                 headerGarlandOn.src = "./images/header_garland_on.svg";
                 document.getElementById("header_garland_off").src = "./images/header_garland_off.svg";
+
+                document.getElementById("left-side").style.height = "100vh";
+
+                if(document.documentElement.clientHeight <= 500){
+                    document.getElementById("left-side").style.height = "170vh";
+                }
+
             }
         }
             
@@ -550,6 +567,12 @@
 
                 headerGarlandOn.src = "./images/header_garland_on.svg";
                 document.getElementById("header_garland_off").src = "./images/header_garland_off.svg";
+
+                document.getElementById("left-side").style.height = "100vh";
+
+                if(document.documentElement.clientHeight <= 500){
+                    document.getElementById("left-side").style.height = "170vh";
+                }
             }
         });
     
@@ -618,6 +641,12 @@
 
                 headerGarlandOn.src = "./images/header_garland_on.svg";
                 document.getElementById("header_garland_off").src = "./images/header_garland_off.svg";
+
+                document.getElementById("left-side").style.height = "100vh";
+
+                if(document.documentElement.clientHeight <= 500){
+                    document.getElementById("left-side").style.height = "170vh";
+                }
             }
         }
     </script>
