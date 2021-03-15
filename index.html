@@ -32,7 +32,7 @@
 
             
 
-        <div class="row content">
+        <div class="row content" id="content">
 
             <img src="./images/lollipop01.png" alt="" id="lollipop01" class="lollipops">
             <img src="./images/lollipop02.png" alt="" id="lollipop02" class="lollipops">
@@ -385,7 +385,8 @@
                 }
 
                 if(!isMobileDevice() && document.documentElement.clientHeight <= 500){
-                    document.getElementById("left-side").style.height = "200vh";
+                    document.getElementById("content").style.height = "60vw";
+
                 }
 
             } 
@@ -420,7 +421,8 @@
                 document.getElementById("left-side").style.height = "100vh";
 
                 if(document.documentElement.clientHeight <= 500){
-                    document.getElementById("left-side").style.height = "200vh";
+                    document.getElementById("left-side").style.height = "100%";
+                    document.getElementById("content").style.height = "60vw";
                 }
             }
             
@@ -496,7 +498,8 @@
                 document.getElementById("left-side").style.height = "100vh";
 
                 if(document.documentElement.clientHeight <= 500){
-                    document.getElementById("left-side").style.height = "200vh";
+                    document.getElementById("content").style.height = "60vw";
+                    document.getElementById("left-side").style.height = "100%";
                 }
 
             }
@@ -571,7 +574,8 @@
                 document.getElementById("left-side").style.height = "100vh";
 
                 if(document.documentElement.clientHeight <= 500){
-                    document.getElementById("left-side").style.height = "200vh";
+                    document.getElementById("content").style.height = "60vw";
+                    document.getElementById("left-side").style.height = "100%";
                 }
             }
         });
@@ -645,7 +649,8 @@
                 document.getElementById("left-side").style.height = "100vh";
 
                 if(document.documentElement.clientHeight <= 500){
-                    document.getElementById("left-side").style.height = "200vh";
+                    document.getElementById("content").style.height = "60vw";
+                    document.getElementById("left-side").style.height = "100%";
                 }
             }
         }
