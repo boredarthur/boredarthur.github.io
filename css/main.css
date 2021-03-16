@@ -575,6 +575,7 @@ footer{
 @media only screen and (pointer: fine) and (max-height: 500px) and (max-width: 955px){
     .content{
         max-height: 750vh;
+        min-height: inherit;
         height: 550vh;
     }
 }
