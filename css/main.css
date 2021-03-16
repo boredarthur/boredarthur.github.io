@@ -572,7 +572,7 @@ footer{
     }
 }
 
-@media only screen and (pointer: fine) and (max-height: 20vw) and (max-width: 955px){
+@media only screen and (pointer: fine) and (max-height: 500px) and (max-width: 955px){
     .content{
         max-height: 750vh;
         height: 550vh;
