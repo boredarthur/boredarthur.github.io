@@ -384,9 +384,13 @@
                     document.getElementById("left-side").style.height = "100vh";
                 }
 
-                if(!isMobileDevice() && document.documentElement.clientHeight <= 500){
-                    // document.getElementById("content").style.height = "300vh";
-                    // document.getElementById("content").style.maxHeight = "350vh";
+                if(!isMobileDevice() && document.documentElement.clientHeight > 200 && document.documentElement.clientHeight <= 500){
+                    document.getElementById("content").style.height = "270vh";
+                    document.getElementById("content").style.maxHeight = "350vh";
+                }
+                if(!isMobileDevice() && document.documentElement.clientHeight <= 200){
+                    document.getElementById("content").style.height = "500vh";
+                    document.getElementById("content").style.maxHeight = "750vh";
                 }
 
             } 
@@ -460,8 +464,8 @@
                     document.getElementById("content").style.maxHeight = "350vh";
                 }
                 if(!isMobileDevice() && document.documentElement.clientHeight <= 200){
-                    document.getElementById("content").style.height = "300vh";
-                    document.getElementById("content").style.maxHeight = "550vh";
+                    document.getElementById("content").style.height = "500vh";
+                    document.getElementById("content").style.maxHeight = "750vh";
                 }
 
             } 
@@ -536,8 +540,8 @@
                     document.getElementById("content").style.maxHeight = "350vh";
                 }
                 if(!isMobileDevice() && document.documentElement.clientHeight <= 200){
-                    document.getElementById("content").style.height = "400vh";
-                    document.getElementById("content").style.maxHeight = "550vh";
+                    document.getElementById("content").style.height = "500vh";
+                    document.getElementById("content").style.maxHeight = "750vh";
                 }
             } 
             else{
@@ -611,8 +615,8 @@
                     document.getElementById("content").style.maxHeight = "350vh";
                 }
                 if(!isMobileDevice() && document.documentElement.clientHeight <= 200){
-                    document.getElementById("content").style.height = "400vh";
-                    document.getElementById("content").style.maxHeight = "550vh";
+                    document.getElementById("content").style.height = "500vh";
+                    document.getElementById("content").style.maxHeight = "750vh";
                 }
             } 
             else{
