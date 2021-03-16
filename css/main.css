@@ -521,23 +521,23 @@ footer{
     position: absolute;
     top: 0;
     left: 0;
-    width: 110vw;
+    width: 130vw;
 }
 
 #header_garland_off{
     left: 0;
     top: 0;
-    width: 110vw;
+    width: 130vw;
 }
 
 #footer_garland_on{
     opacity: 0; 
     transition: opacity 3s ease;
-    width: 110vw;
+    width: 130vw;
 }
 
 #footer_garland_off{
-    width: 110vw;
+    width: 130vw;
 }
 
 .row{
@@ -1172,8 +1172,8 @@ footer{
     .button .clickable_part{
         width: calc(15vw + 15vh);
         height: 50%;
-        margin-top: 1.7vh;
-        font-size: calc(2rem + .5vh);
+        margin-top: calc(.5vw + 1vh);
+        font-size: calc(1vw + 1vh);
     }
 
     #open_modal{
@@ -1342,14 +1342,14 @@ footer{
     #lollipop01{
         width: calc(3vw + 8vh);
         right: 30%;
-        bottom: -3.5%;
+        bottom: -3vw;
     }
 
     #lollipop02{
         width: calc(3vw + 6vh);
         left: 3%;
         z-index: 10;
-        bottom: 2%;
+        bottom: 1vw;
         right: inherit;
     }
 
