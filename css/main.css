@@ -275,10 +275,10 @@ body{
     letter-spacing: .1em;
 
     text-shadow:
-    -1px -1px 0 #AF002A,  
-     1px -1px 0 #AF002A,
-    -1px  1px 0 #AF002A,
-     1px  1px 0 #AF002A;
+    -.08vw -.08vw 0 #AF002A,  
+     .08vw -.08vw 0 #AF002A,
+    -.08vw  .08vw 0 #AF002A,
+     .08vw  .08vw 0 #AF002A;
 
      transition: opacity .5s ease;
 }
@@ -488,10 +488,10 @@ footer{
     font-weight: 900;
     color: #fff;
     text-shadow:
-    -1px -1px 0 #AF002A,  
-     1px -1px 0 #AF002A,
-    -1px  1px 0 #AF002A,
-     1px  1px 0 #AF002A;
+    -.08vw -.08vw 0 #AF002A,  
+     .08vw -.08vw 0 #AF002A,
+    -.08vw  .08vw 0 #AF002A,
+     .08vw  .08vw 0 #AF002A;
 
      transition: opacity .5s ease;
 }
@@ -544,11 +544,11 @@ footer{
     flex-wrap: inherit!important;
 }
 
-@media only screen and (min-height: 30vw) and (max-height: 45vw){
+@media only screen and (min-height: 40vw) and (max-height: 45vw){
     .content{
-        height: 45vw;
-        max-height: 45vw;
-        min-height: 45vw;
+        height: 50vw;
+        max-height: 50vw;
+        min-height: 50vw;
     }
 
     footer{
@@ -556,7 +556,7 @@ footer{
     }
 }
 
-@media only screen and (max-height: 30vw){
+@media only screen and (pointer: fine) and (max-height: 40vw){
     .content{
         height: 60vw;
         max-height: 60vw;
@@ -1180,10 +1180,16 @@ footer{
         font-size: calc(1rem + 1.2vh);
         margin-top: calc(1rem - 3vh);
     }
+
+    .modal_row{
+        width: 90%;
+        margin: 0 auto;
+    }
     
     .my_modal{
         width: 85%;
         transform: translateX(-50%) translateY(-70%);
+        height: 90vh;
     }
 
     .modal_header{
@@ -1195,19 +1201,26 @@ footer{
     }
 
     .close_button{
-        right: calc(2vw + 3.2vh);
+        right: 2%;
         width: calc(.7vw + 1.5vh);
     }
 
     .button_wrapper{
-        height: 8vh;
-        min-height: 8vh;
+        margin-top: 1%;
+        height: 10vh;
+        min-height: inherit;
     }
 
     .modal_body{
         padding: calc(.7vw + .7vh);
         font-size: calc(1vw + 1vh);
         width: 95%;
+        height: 75%;
+    }
+
+    .modal_button{
+        width: 97%;
+        height: 100%;
     }
 
     .modal_button a{
