@@ -572,6 +572,13 @@ footer{
     }
 }
 
+@media only screen and (pointer: fine) and (max-height: 20vw) and (max-width: 955px){
+    .content{
+        max-height: 750vh;
+        height: 550vh;
+    }
+}
+
 @media only screen and (min-width: 1900px){
     #open_modal{
         font-size: calc(13px + .3vw);
